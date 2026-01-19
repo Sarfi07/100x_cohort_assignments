@@ -127,12 +127,129 @@ body {
             }
 
         }
+
+        #stats {
+
+            padding: 2vh 20vw;
+            color: White;
+
+            #top {
+                width: 100%;
+                background-color: #150861;
+                display: flex;
+                justify-content: center;
+                padding: 2.5rem 0;
+                border-radius: 1rem;
+                border-top-right-radius: 8rem;
+
+
+                .rBorder {
+                    border-right: 2px solid white;
+                }
+                .sChild {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+
+
+                    .l {
+                        min-height: 3rem;
+                        min-width: 3rem;
+                        margin-right: 1rem;
+                        background-color: #BABAFFB2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+            }
+            
+            .title {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            .desc {
+                margin: 0;
+                color:#676565;
+                font-size: .9rem;
+            }
+
+            #bottom {
+                width: 100%;
+                display: flex;
+                margin-top: 2rem;
+                
+                #sleft {
+                    background-color: #08614e;
+                    flex: 3;
+                    padding: 2rem;
+        
+
+                    .features {
+                        margin-top: 1rem;
+
+                        .fChild {
+                            height: 1.5rem;
+                            display: inline-block;
+                            background-color: white;
+                            color: #08614e;
+                            margin: .5rem;
+                            padding: .5rem 1rem;
+                            border-radius: 2rem;
+                        }
+                    }
+                    
+
+                }
+
+                #sright {
+                    margin-left: 2rem;
+                    background-color: #150861;
+                    flex: 2;
+                    padding: 2rem;
+
+                }
+
+
+            }
+        }
+    }
+
+    .cBorderSm {
+        border-top-right-radius: .75rem;
+        border-bottom-left-radius: .75rem;
+    }
+    .cBorder {
+        border-top-right-radius: 44px;
+        border-bottom-left-radius: 44px;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+
+    header {
+        
+    }
+    body > main > #hero {
+        padding: 16vw 2vw;
+    }
+
+    body > main > #stats {
+        padding: 2vh 3vw;
     }
 }
 
-@media (max-width: 1100px) {
+
+
+@media (max-width: 600px) {
     header {
-        width: 100vw;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
